@@ -1,0 +1,179 @@
+#custom-container {
+    overflow-x: hidden;
+    display: grid;
+    grid-template-areas: 'left middle middle middle right';
+    grid-gap: 1px;
+}
+
+@media only screen and (max-width: 600px) {
+    #container {
+        overflow-x: hidden;
+        display: grid;
+        grid-template-areas: 'right' 'left' 'middle';
+        grid-gap: 1px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+element.style {
+    display: block;
+}
+
+.notepad {
+    display: block;
+}
+
+body {
+    background-image: url('../images/wood.png');
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    display: block;
+    padding: 2vh;
+}
+
+#left {
+    grid-area: left;
+    padding-top: 5px;
+    display: block;
+}
+
+#middle {
+    grid-area: middle;
+    display: block;
+    border: none;
+    margin: 0px 0px 20px 20px;
+}
+
+#right {
+    grid-area: right;
+    padding: 10px 0 0 20px;
+}
+
+#formCreateNote {
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    /* box-shadow: 0 0 10px rgba(118, 80, 13, .9); */
+    font-size: 20px;
+    outline: none;
+    background-color: transparent;
+}
+
+#body_create_note,
+#body_edit_note {
+    height: 100%;
+    width: 100%;
+    min-height: 400px;
+    background-image: url(../images/paper.jpg);
+    border: solid rgb(170, 204, 203);
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(118, 80, 13, .9);
+    font-size: 20px;
+}
+
+button {
+    background: #5081cc;
+    color: #FFF;
+    text-align: center;
+    border: solid #5081cc;
+    cursor: pointer;
+}
+
+.btn-signout,
+.btn-change-pass {
+    outline: none;
+    border-radius: 3px;
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    opacity: 0.9;
+}
+
+i {
+    font-size: 16px;
+}
+
+#singin-up-form {
+    width: 50%;
+    margin: auto;
+    display: block;
+    background-color: papayawhip;
+    padding: 10px 40px 10px 40px;
+    box-shadow: 0 0 10px rgba(118, 80, 13, .9);
+    outline: none;
+    height: 620px;
+    height: 100%;
+    min-height: 620px;
+    border-radius: 5px;
+}
+
+.toolbox>button {
+    margin-left: -5px;
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+    border: solid black;
+}
+
+.btn-large {
+    padding: 9px 14px;
+}
+
+.fa-pencil {
+    vertical-align: middle;
+}
+
+.list>a {
+    color: rgb(233, 190, 121);
+    text-decoration: none;
+    display: block;
+    background-color: rgb(59, 138, 104);
+    border-radius: 3px;
+    margin-left: -5px;
+    width: 100%;
+}
+
+.list {
+    margin-left: 5px;
+}
+
+.btn-large {
+    box-shadow: rgba(215, 210, 205, 0.2) 0px 1px 0px 0px inset, rgba(10, 5, 0, 0.0470588) 0px 1px 2px 0px;
+    border-color: rgba(215, 200, 190, 0.95);
+    color: rgb(105, 67, 0);
+    opacity: 0.9;
+    text-shadow: 1px 1px 1px rgba(225, 220, 215, 0.95);
+    background-color: cornsilk;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.fa-pencil {
+    color: black
+}
+
+a {
+    color: #fefefe;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 100%;
+    border-radius: 3px;
+    outline: none;
+}
+
+.log_msg {
+    color: red;
+}
